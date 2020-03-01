@@ -30,6 +30,7 @@ p a{
   padding: 10px;
   text-decoration: none;
   color: black;
+  font-size: 30px;
 }
 
 .loading {
@@ -65,10 +66,15 @@ h1 {
 }
 
 img:hover {
-  transform: rotate(360deg);
-  transition: transform 2s ease-in-out;
-  animation-iteration-count: infinite;
+  animation: rotation 2s infinite;
 }
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+    to {
+      transform: rotate(359deg);
+    }
 
 
 
