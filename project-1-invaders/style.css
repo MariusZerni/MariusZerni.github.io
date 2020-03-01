@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+  background-image: url('images/background-img.jpg');
+  background-size: cover;
+}
+
+.grid {
+  display: none;
+  width: 800px;
+  height: 600px;
+  /* border: 3px solid green; */
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-right: 100px;
+}
+
+.cell {
+  display: flex;
+  width: 5%;
+  height: 5%;
+  justify-content: center;
+  align-content: center;
+  /* border: 1px solid grey; */
+}
+
+.invaders {
+  background-image: url("images/spaceship.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+}
+
+.player {
+  background-image: url("images/player.png");
+  background-size: 80%;
+  background-repeat: no-repeat;
+}
+
+.bombs {
+  background-image: url("images/bombs.png");
+  background-size: 40%;
+  background-repeat: no-repeat;
+}
+
+.laser {
+  background-image: url("images/laser-beam.png");
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.main {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  width: 100%;
+}
+
+.aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 350px;
+  
+}
+
+p {
+  font-size: 40px;
+  display: none;
+  color: rgb(241, 245, 35);
+  font-family: 'Orbitron', serif;
+}
+
+button {
+  padding: 20px;
+  background-color: rgb(241, 245, 35);
+  
+}
+
+.start {
+  font-family: 'Akronim', serif;
+  font-size: 80px;
+  border: 2px solid grey;
+  border-radius: 10px;
+}
+
+.play {
+  display: none;
+  font-family: 'Akronim', serif;
+  width: 60%;
+  font-size: 40px;
+  border: 2px solid grey;
+  border-radius: 10px;
+}
+
+
+.grid-game-over {
+  display: none;
+  width: 100%;
+  align-content: center;
+  
+}
+
+.game-over {
+  display: flex;
+  padding: 20px 20px;
+  background-color: rgb(241, 245, 35);
+  font-size: 40px;
+  font-family: 'Orbitron', serif;
+  border: 2px solid grey;
+  border-radius: 10px;
+}
+
+.control-player {
+  font-size: 5px;
+  display: none;
+  color: rgb(241, 245, 35);
+  font-family: 'Orbitron', serif;
+}
+
